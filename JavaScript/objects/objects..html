@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title style="color: blue;">Javascript/Objects</title>
+    </head>
+    <body>
+        <h1>Creating Javascript Objects</h1>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <script>
+            var student = {
+                Name : "Kunchala",
+                Age : 22,
+                Class : "B.Tech"
+            };
+
+            document.getElementById("demo").innerHTML = student.Name +" age of "+student.Age + " studying in "+student.Class; 
+        </script>
+        <script>
+            var student =new Object();
+
+            student.Name = "Acee";
+            student.Age = 22;
+            student.Class = "ECE"
+
+            
+            document.getElementById("demo1").innerHTML = student.Name +" age of "+student.Age + " studying in "+student.Class; 
+        </script>
+
+        <script>
+
+            // not working fine -------------------------====>>
+            // function stud(name, age, studies){
+            //     this.name = name;
+            //     this.age = age;
+            //     this.studies = studies;
+            // };
+
+            // let s = stud("Kunchala",22,"Engineering");
+
+            // console.log(s.age)
+
+            function hello(){
+                console.log("Hello world");
+
+            }
+            hello()
+            
+            // document.getElementById("demo2").innerHTML = student.name +" age of "+student.age + " studying in "+student.Class; 
+        </script>
+    </body>
+</html>

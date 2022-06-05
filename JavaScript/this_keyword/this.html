@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Javascript/This_Keyword</title>
+    </head>
+    <script>
+        // var val = 50;
+
+        // function my_func(){
+        //     var val = 100;
+
+        //     alert("value "+val)
+        //     alert("Value "+this.val)
+        // }
+
+        // my_func()
+        name = "Yess"
+
+        const random = {
+            name : "Ace",
+            info(){
+                console.log("Hi, I'm "+ this.name)
+            },
+            vid : ["acer","yess","Acee"],
+            vid_info(){
+                this.vid.forEach(function (params) {
+                    console.log(this.name +" "+ params)
+                },this)
+            }
+
+        }
+        random.info()
+        random.vid_info()
+    </script>
+</html>

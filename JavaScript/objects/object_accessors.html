@@ -1,0 +1,35 @@
+<html>
+    <body>
+        <p id ="demo"></p>
+
+        <script>
+            var car = {
+                model : "BMW",
+                color : "Black",
+                fuel_type : "Petrol",
+
+                get fuel(){
+                    return this.fuel_type
+                }
+            };
+
+            document.getElementById("demo").innerHTML = car.fuel;
+        </script>
+
+        <script>
+            var bike = {
+                model : "Duke",
+                color : "Black",
+                fuel_type : "",
+
+                set f(fuel){
+                    this.fuel_type=fuel;
+                }
+            }
+            bike.f = "Diesel"
+            document.getElementById("demo").innerHTML = bike.fuel_type;
+
+
+        </script>
+    </body>
+</html>

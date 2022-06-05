@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <!-- <script>
+            a = 30;
+            function ace(){
+                let b = 20;
+
+                document.write(a+b + '<br>');
+                document.write(a+b+" doing ");
+            }
+            ace()
+        </script> -->
+        <script>
+            var a = 10; //global variable
+
+            function acer(){
+                var b = 20; // outside functionn
+                function acer1(){
+                    var c =70; // inside function
+                    return d = a+b+c;
+                }
+                return acer1()
+            }
+            document.write(acer())
+        </script>
+
+    </body>
+</html>
