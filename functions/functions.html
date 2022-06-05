@@ -1,0 +1,70 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            function my_func(val){
+                document.getElementById("demo").innerHTML = val * val;
+            }
+            my_func(20)
+
+            var x = function(a,b) {return a*b};
+            document.getElementById("demo").innerHTML = x(2,4);
+
+        </script>
+        <script>
+            var my_function = new Function("a","b","c", "return a+b+c")
+
+            var ace = my_function(2,4,6);
+
+            document.getElementById("demo").innerHTML = "The Sum of "+ ace;
+        </script>
+        <script>
+            // Self Invoking Function
+            
+            // (function (){
+            //     alert("Hello world")
+            // }
+            // )()
+        </script>
+        
+        <script>
+            function product(a,b,c){
+                return a*b*c;
+            }
+
+            var y = product(2,4,6)*2
+            document.getElementById("demo").innerHTML = y;
+        </script>
+
+        <script>
+            var z =(a,b,c) => {return a+b+c};
+            document.getElementById("demo").innerHTML = "The Sum "+ z(1,2,3);
+        </script>
+
+        <script>
+            function* generateFunc(){
+                yield 1;
+                yield 2;
+                return 3;
+            }
+
+            let generator = generateFunc();
+
+            let one = generator.next();
+            let two = generator.next();
+            let three = generator.next();
+
+            alert(JSON.stringify(one));
+            alert(JSON.stringify(two));
+            alert(JSON.stringify(three));
+        </script>
+
+        <script>
+            let a = 5;
+            let b = 6;
+            let c = 9;
+            console.log(eval("a+b"));
+            console.log(eval(c))
+        </script>
+    </body>
+</html>
